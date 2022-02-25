@@ -1,0 +1,149 @@
+/* font-family: 'Source Sans Pro', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-22-1-hex { color: #ACA3E6; }
+.My-Color-Theme-22-2-hex { color: #FFD4B5; }
+.My-Color-Theme-22-3-hex { color: #D5CFFF; }
+.My-Color-Theme-22-4-hex { color: #BAFFB5; }
+.My-Color-Theme-22-5-hex { color: #8BB388; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  line-height: 1.6; 
+  background-image: linear-gradient(#FFD3B5, #D5CFFF, #BAFFB5);
+  color: #4B614A;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;  
+  line-height: 1.1;
+  margin-bottom: 0.3rem;  
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p, a {
+  font-size: 1rem;  
+  text-decoration: none;
+  color: #4B614A;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 26px;
+  }  
+}
+
+#navbar {
+  position: fixed;
+  padding: 0.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: black;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  color: #D5CFFF;
+  transition: transform 0.3s ease-out;  
+}
+
+#welcome-section {
+  height: 100vh;
+  padding: 40vh 0;
+}
+
+#welcome-section > p {
+  font-style: italic;
+}
+
+#projects, #contact {
+  padding: 15vh 5vw;
+}
+
+#project-grid {
+  margin: 2em 0 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
+.project-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.project-title {
+  background: white;
+  margin-top: -0.5em;
+  border-radius:0 0 10px 10px;  
+}
+
+#contact {
+  margin-bottom: 4em;
+}
+
+#contacts {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  padding: 0 1em; 
+  transition: transform 0.3s ease-out;
+}
+
+footer > p {
+  font-size: 0.8rem;
+}
+
+.nav-link:hover {
+  transform: translateY(0.2rem);
+}
+
+.project-tile {
+  transition: transform 0.3s ease-out;  
+}
+
+.project-tile:hover {
+  transform: scale(0.9, 0.9);
+}
+
+#button-show-all {
+  display: block;
+  transition: transform 0.3s ease-out;  
+}
+
+#button-show-all:hover,
+.contact-link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 500px) {
+  .project-tile {
+    max-width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}

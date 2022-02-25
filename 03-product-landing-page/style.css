@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html {
+  background: #C1A742;
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  font-size: 1.3rem;
+  color: #423A17;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#header-img {
+  width: 250px;
+}
+
+#header {
+  position: fixed;
+  background: #75631C;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 25px 8px 3px;
+  align-items: flex-end;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main {
+  padding-top: 80px;
+  display: grid;
+  align-items: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 40px;  
+}
+
+#library {
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
+  margin: auto;
+  text-align: justify;
+  gap: 3%;
+}
+
+p {
+  line-height: 1.2;
+}
+
+#book-open {
+  fill: #FFE270;
+  margin-top: 10px;  
+}
+
+#membership {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.2;
+}
+
+.membership-class {
+  border-style: solid;
+  border-color: #75631C;
+  padding: 0px 40px;
+}
+
+.level {
+  background: #75631C;
+  color: white;
+}
+
+.button {
+  padding: 5px 20px;
+  margin: 10px 0;
+  background: #FFE270;
+  border-color: transparent;
+  color: #423A17;
+  font-weight: 700;  
+}
+
+.button:hover {
+  background: #423A17;
+  color: white;
+  cursor: pointer;
+}
+
+#email {
+  border-color: transparent;  
+  padding: 3px 0;
+}
+
+footer {
+  color: #FFE270;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 555px) {
+  #header, #nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #nav-bar {
+    line-height: 0.3;
+    margin: 10px 0;
+  }
+  #membership {
+    display: grid;
+    gap: 10px;
+    margin: auto;
+  }
+  #video, #email {
+    width: 80%;
+  }
+  h1{
+    line-height: 1.2;
+  }
+  main {
+    padding-top: calc(150px - 10%);
+  }
+  #header-img {
+    width: 200px;
+  }
+  #book-open {
+    display: none;
+  }
+}

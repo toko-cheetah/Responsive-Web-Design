@@ -1,0 +1,97 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Nunito', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2;
+  color: #260801;
+  margin: 0;
+}
+
+#main {
+  background-color: #F2E0D5;
+  border-radius: 10px;
+  margin: 30px 10px;
+  padding: 10px 0px;
+}
+
+@media (max-width: 500px) {
+  #main {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+#img-div {
+  background: white;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  border-radius: 7px 7px 0px 0px;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+#aka {
+  margin: -4% 0% 4% 0%;
+  font-size: 1.1em;
+}
+
+#img-caption {
+  margin: 5px 0px -5px 0px;
+}
+
+@media (min-width: 900px) {
+  #aka {
+    margin: -2% 0% 1% 0%;
+  }
+  #img-caption {
+    margin-bottom: -1.8%;
+  }
+}
+
+ul {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  line-height: 1.3;
+}
+
+li {
+  margin: 3%;
+}
+
+@media (max-width: 400px) {
+  li {
+    margin: 9%;
+  }
+}
+
+blockquote {
+  line-height: 1.5;
+  margin: 5% 20%;
+  font-style: italic;
+}
+
+@media (min-width: 900px) {
+  blockquote {
+    margin: 30px 20%;
+  }
+}
+
+#tribute-link {
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.1em;
+}

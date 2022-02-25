@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+html {
+  background: #1F1A24;
+  color: #D2D2D9;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  width: 320px;
+  border-right: 5px solid #68718C;
+  padding: 0 20px;
+}
+
+#navbar > div > a {
+  display: block;
+  color: #F0F0F2;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 10px 0;  
+  border-bottom: 1px solid #9A98A6;
+}
+
+#mdn {
+  color: #D2D2D9;
+}
+
+#main-doc {
+  position: absolute;
+  left: 320px;
+  padding: 0 20px;
+}
+
+header {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 15px 10px;
+}
+
+#navbar > header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p, li {
+  font-size: 1.2rem;
+  margin: 10px 25px;
+}
+
+ul {
+  margin-left: 35px;
+}
+
+code {
+  margin-left: 60px;  
+  background: #9A98A6;
+  color: #1F1A24;
+  display: block;
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  white-space: pre-line;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  html {
+    line-height: 1.2;
+  }
+  
+  #navbar {
+    position: static;
+    height: 190px;
+    width: 100%;
+    border-bottom: 5px solid #68718C;
+    border-right: none;
+  }
+  
+  #navbar > div > a {
+    font-size: 1rem;
+  }
+  
+  #navbar > div {
+    height: 140px;
+    overflow: auto;
+  }
+  
+  #main-doc {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    padding: 10px;
+  }
+  
+  header {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 15px 10px;
+  }
+  
+  p, li {
+    font-size: 1rem; 
+  }
+  
+  code {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 238px) {
+  #navbar > div {
+    height: 110px;
+    overflow: auto;
+  }
+}
